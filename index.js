@@ -1,13 +1,10 @@
 import React from 'react';
-import { ChatEngine } from 'react-chat-engine';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-export function App() {
-	return (
-		<ChatEngine
-			height='100vh'
-			userName='s.tarhi'
-			userSecret='JFBJjjbfvj5454*/ksc&$%'
-			projectID='7ad26904-84d4-447b-9b4d-ee5bf1690008'
-		/>
-	);
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
